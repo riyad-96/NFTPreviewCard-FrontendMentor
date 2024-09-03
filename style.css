@@ -14,6 +14,8 @@
 
   /* ! Font-size */
   --fontSize: 18px;
+
+  --box-shadow: hsl(217deg 51.36% 8.42%);
 }
 
 .darkMode{
@@ -25,6 +27,8 @@
   --veryDarkBlue-CardBg: hsl(216, 50%, 84%);
   --veryDarkBlue-Line: hsl(215, 32%, 73%);
   --White: hsl(0, 0%, 0%);
+
+  --box-shadow: hsl(217deg 22.26% 60.69%);
 }
 
 
@@ -64,6 +68,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  box-shadow: 0px 15px 34px -6px var(--box-shadow);
 }
 
 .wrapper .image {
@@ -206,6 +211,7 @@ button{
   background: var(--veryDarkBlue-CardBg);
   color: var(--White);
   cursor: pointer;
+  margin-top: 1rem;
   
   &:hover{
     background: var(--cyan);
